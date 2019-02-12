@@ -22,8 +22,9 @@ driver = new ChromeDriver();
 	driver.manage().window().maximize();
 //driver.manage().window().fullscreen();
 driver.manage().deleteAllCookies();
-driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 driver.manage().timeouts().pageLoadTimeout(40,TimeUnit.SECONDS);
+
+driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 
 	driver.get("https://freecrm.com/");	
 		
